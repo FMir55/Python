@@ -19,3 +19,9 @@ student_objects[0].set_name('John')
 
 for i in student_objects:
     print i.name,i.grade,i.age
+print "==================="
+from operator import attrgetter 
+
+student_objects.sort(key=attrgetter('grade', 'age'),reverse=True)  
+for i in student_objects:
+    print i.name,i.grade,i.age
