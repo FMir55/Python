@@ -4,7 +4,8 @@
 
 *** This is a git repo
 
-
 ```
-sudo apt-get
+sudo chown -R $USER:$USER /var/www/example.com/shop1
+sudo chown -R $USER:$USER /var/www/example2.com/shop2
+sudo chmod -R 755 /var/www
 ```
